@@ -116,3 +116,5 @@ def correlation_tabel():
 
 correlation_tabel()
 ```
+The final correlation table will look like this (when zoomed in).
+![Correlation_table1](https://user-images.githubusercontent.com/63104057/78458613-0f87c100-76b3-11ea-9e61-ec0e9054f9e8.png)
