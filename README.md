@@ -1,7 +1,7 @@
 # Stock-correlation-matrix
 
 ## About
-This program is written in Python and is made for calculating and visualizing correlations between stocks in a given index (i.e. S&P 500), which is useful for getting an idea of the relationships there are between certain stocks. Potentially this program could be used for selecting stocks for a portfolio that reduces risk. 
+This program is written in Python and is made for calculating and visualizing correlations between stocks in a given index (i.e. S&P 500), which is useful for getting an idea of the relationships that exist between certain stocks. Potentially this program could be used for selecting stocks for a portfolio that reduces risk. 
 
 The idea behind this is of course the diversification strategy; by investing in a bunch of companies with zero (or little) correlation over time your portfolio will be more diverse, which in turn will minimize your risk. 
 
