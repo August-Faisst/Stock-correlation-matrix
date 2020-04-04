@@ -81,7 +81,7 @@ def compile_data():
 
 compile_data()
 ```
-Having the dataframe which consists of price data for the entire index, the program cauculates the correlation coefficients between all the stocks in the index. It then plots the correlations in a heatmap for a nice visual representation. 
+Having the dataframe which consists of price data for the entire index, the program calculates the correlation coefficients between all the stocks in the index. It then plots the correlations in a heatmap for a nice visual representation. 
 ```
 def correlation_tabel():
     df = pd.read_csv('sp500_joined_closes.csv')
