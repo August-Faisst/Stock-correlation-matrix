@@ -7,7 +7,7 @@ The idea behind this is of course the diversification strategy; by investing in 
 
 ## How it works
 The program grabs all the tickers (symbols) in an index from Wikipedia by extracting data from HTML using the Beautiful Soup package (web scraping). Then it turns the extrated data into to a beautifulsoup objct and creates a pickle.
-```
+```python
 def save_sp500_tickers():
     resp = requests.get('http://en.wikipedia.org/wiki/List_of_S%26P_500_companies')
     soup = bs.BeautifulSoup(resp.text, 'lxml')
@@ -29,7 +29,7 @@ def save_sp500_tickers():
 save_sp500_tickers()
 ```
 Using this pickle, the program calls the Yahoo Finance server to import price data for the tickers in the index. From here it saves the price data as individual csv-files (it can be a quite slow process so this just save the import in case the connection to the server breaks), for subsequently to compile them all into one dataframe. 
-```
+```python
 def get_data_from_yahoo(reload_sp500=False):
     if reload_sp500:
         tickers = save_sp500_tickers()
@@ -82,7 +82,7 @@ def compile_data():
 compile_data()
 ```
 Having the dataframe which consists of price data for the entire index, the program calculates the correlation coefficients between all the stocks in the index. It then plots the correlations in a heatmap for a nice visual representation. 
-```
+```python
 def correlation_tabel():
     df = pd.read_csv('sp500_joined_closes.csv')
     df_corr = df.corr()
